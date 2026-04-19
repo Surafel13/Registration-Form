@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="/Style/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <h1>Login Form</h1>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter password" required />
+        </div>
+
+        <div class="buttons">
+          <button type="button" class="btn btn-primary" onclick="handleLogin()">Login</button>
+          <button type="button" class="btn btn-danger" onclick="clearForm('loginForm')">Clear</button>
+        </div>
+      </form>
+
+      <div class="link">
+        Don't have an account? <a href="RegistrationPage.html">Create New Account</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/Script/script.js"></script>
+</body>
+</html>
